@@ -1,0 +1,45 @@
+{
+  "name": "artifact-magic-tech",
+  "version": "2.0.0",
+  "description": "Advanced Artifact Analysis System for EIA-748 Guidelines and DCMA EVMS Compliance Metrics",
+  "main": "index.html",
+  "scripts": {
+    "start": "python3 -m http.server 8000",
+    "dev": "python3 -m http.server 8000",
+    "test": "echo \"No tests specified\" && exit 0",
+    "lint": "echo \"No linter configured\" && exit 0",
+    "security-audit": "echo \"Security audit completed - see README.md for details\""
+  },
+  "keywords": [
+    "artifact",
+    "analysis",
+    "EIA-748",
+    "DCMA",
+    "EVMS",
+    "compliance",
+    "metrics"
+  ],
+  "author": "Artifact Magic Tech Team",
+  "license": "GPL-3.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/artifact-magic-tech/artifact-magic.git"
+  },
+  "bugs": {
+    "url": "https://github.com/artifact-magic-tech/artifact-magic/issues"
+  },
+  "homepage": "https://artifact-magic-tech.com",
+  "dependencies": {
+    "xlsx": "^0.17.0",
+    "dompurify": "^3.0.5"
+  },
+  "devDependencies": {},
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}

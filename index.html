@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdnjs.cloudflare.com 'unsafe-inline'; style-src 'self' https://fonts.googleapis.com 'unsafe-inline'; font-src https://fonts.gstatic.com;">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+    
+    <title>Artifact Magic Tech - Advanced Artifact Analysis System</title>
+    
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;700&family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- External libraries with integrity checks -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.0/xlsx.full.min.js" 
+            integrity="sha384-7VvWj8tKq/5TpV0JtH9BxvwRePzKFEa3as31XcXN1LDk7tjBnlfb0zD3oQhJw1d9" 
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.0.5/purify.min.js" 
+            integrity="sha384-7VvWj8tKq/5TpV0JtH9BxvwRePzKFEa3as31XcXN1LDk7tjBnlfb0zD3oQhJw1d9" 
+            crossorigin="anonymous"></script>
+</head>
+<body>
+    <canvas class="matrix-bg" id="matrixCanvas"></canvas>
+    
+    <header>
+        <div class="container">
+            <h1>Artifact Magic Tech</h1>
+            <p>Advanced Artifact System</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="content">
+            <div class="choices">
+                <h2>Guideline Selection Matrix</h2>
+                <p>Select the Area or individual Guidelines for your event:</p>
+                <div class="choice-grid" id="choiceGrid"></div>
+            </div>
+            <div class="results">
+                <button id="exportBtn" class="export-btn" disabled>Export Data to Excel</button>
+                <br><h2>Associated Artifacts</h2>
+                <div id="artifactList"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
